@@ -1,13 +1,41 @@
 .container {
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+}
+.wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   height: 55px;
-  margin: 0 16px;
+
+  & > * {
+    padding: 0 16px;
+  }
 }
 .menu {
   display: flex;
 }
+.logo {
+  cursor: pointer;
+}
 .barIcon {
   font-size: 24px;
+  cursor: pointer;
+}
+
+.enter {
+  opacity: 0;
+}
+.enterActive {
+  opacity: 1;
+  transition: all 300ms;
+}
+.exit {
+  opacity: 1;
+}
+.exitActive {
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
 }
