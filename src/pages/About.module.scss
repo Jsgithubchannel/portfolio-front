@@ -1,0 +1,20 @@
+@import "../styles/utils";
+
+.container {
+  padding-top: 55px;
+}
+.title {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 18px;
+  margin-left: 32px;
+
+  h1 {
+    margin: 0;
+  }
+}
+.underline {
+  width: 50px;
+  height: 3px;
+  background-color: $secondary-color;
+}

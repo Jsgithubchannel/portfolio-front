@@ -1,7 +1,10 @@
+@import "../styles/utils";
+
 .container {
   position: fixed;
   width: 100vw;
-  z-index: 100;
+  z-index: 1;
+  background-color: $base-color;
 }
 .wrapper {
   display: flex;

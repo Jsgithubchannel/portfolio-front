@@ -1,0 +1,29 @@
+@import "../styles/utils";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 44px;
+
+  h1 {
+    margin-bottom: 0;
+  }
+  ul {
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 1px solid $secondary-color;
+  border-radius: 50%;
+}
+.icon {
+  font-size: 64px;
+  color: $secondary-color;
+}

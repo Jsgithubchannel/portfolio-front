@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "title": "Front-End",
+    "stack": {
+      "0": "React | Redux",
+      "1": "JavaScript",
+      "2": "TypeScript",
+      "3": "SCSS, CSS Modules",
+      "4": "HTML"
+    }
+  },
+  {
+    "id": 1,
+    "title": "Back-End",
+    "stack": { "0": "Django", "1": "Firebase" }
+  },
+  {
+    "id": 2,
+    "title": "Tool",
+    "stack": { "0": "Figma", "1": "Adobe Photoshop", "2": "Git, Github" }
+  }
+]
