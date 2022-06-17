@@ -21,9 +21,7 @@ const Skill = ({ skill }) => {
       </div>
       <h1>{skill.title}</h1>
       {Object.entries(skill.stack).map(([key, val]) => (
-        <ul key={key} class>
-          {val}
-        </ul>
+        <ul key={key}>{val}</ul>
       ))}
     </div>
   );

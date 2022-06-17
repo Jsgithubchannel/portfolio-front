@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./ProjectDetail.module.scss";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const ProjectDetail = () => {
   const { state } = useLocation();
