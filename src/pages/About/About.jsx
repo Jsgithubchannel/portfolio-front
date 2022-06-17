@@ -7,10 +7,7 @@ import skills from "../../static/skills.json";
 const About = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.title}>
-        <Title title={"About Me"} />
-        <div className={styles.underline} />
-      </div>
+      <Title title={"About Me"} />
       {skills.map((skill) => (
         <Skill skill={skill} key={skill.id} />
       ))}
