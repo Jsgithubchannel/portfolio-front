@@ -2,8 +2,10 @@ import React, { useCallback, useEffect, useState } from "react";
 import styles from "./Project.module.scss";
 import Title from "../components/Title";
 import { getProject } from "../services/projectService";
+import { useNavigate } from "react-router-dom";
 
 const Project = () => {
+  const navigate = useNavigate();
   const [projects, setProjects] = useState([]);
   const [hoverId, setHoverId] = useState(0);
   const loadProjectsFromServer = useCallback(async () => {
@@ -28,6 +30,9 @@ const Project = () => {
               alt="project_screenshot"
               onMouseEnter={() => setHoverId(project.id)}
               onMouseLeave={() => setHoverId(0)}
+              onClick={() =>
+                navigate(`/project/${project.id}`, { state: project })
+              }
             />
           </div>
         ))}
