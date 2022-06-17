@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Navbar.module.scss";
-import useWindowDimensions from "../hooks/useWindowDimensions";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 import { CSSTransition } from "react-transition-group";
-import Menu from "./Menu";
+import Menu from "../Menu/Menu";
 
 const Navbar = () => {
   const [showButton, setShowButton] = useState(true);

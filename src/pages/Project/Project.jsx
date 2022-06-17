@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import styles from "./Project.module.scss";
-import Title from "../components/Title";
-import { getProject } from "../services/projectService";
+import Title from "../../components/Title/Title";
+import { getProject } from "../../services/projectService";
 import { useNavigate } from "react-router-dom";
 
 const Project = () => {
