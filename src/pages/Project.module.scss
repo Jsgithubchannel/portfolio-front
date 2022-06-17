@@ -1,3 +1,34 @@
-.container{
-    padding-top: 55px;
+@import "../styles/utils";
+
+.container {
+  padding-top: 55px;
+}
+
+.wrapper {
+  margin-top: 44px;
+}
+.imgContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  img {
+    width: 70%;
+    margin-bottom: 16px;
+    border: 1px solid rgb(144, 144, 144);
+    cursor: pointer;
+  }
+  img:hover {
+    opacity: 0.15;
+    transition: opacity 0.3s;
+  }
+}
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 28px;
+  font-weight: bolder;
+  color: $secondary-color;
 }

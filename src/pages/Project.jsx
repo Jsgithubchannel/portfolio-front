@@ -5,6 +5,7 @@ import { getProject } from "../services/projectService";
 
 const Project = () => {
   const [projects, setProjects] = useState([]);
+  const [hoverId, setHoverId] = useState(0);
   const loadProjectsFromServer = useCallback(async () => {
     getProject().then((response) => {
       setProjects(response);
@@ -17,15 +18,19 @@ const Project = () => {
     <div className={styles.container}>
       <Title title={"Project"} />
       <div className={styles.wrapper}>
-        {projects.map((project) => {
-          return (
+        {projects.map((project) => (
+          <div key={project.id} className={styles.imgContainer}>
+            {project.id === hoverId && (
+              <p className={styles.title}>{project.title}</p>
+            )}
             <img
               src={`http://localhost:8000${project.photo}`}
               alt="project_screenshot"
-              key={project.id}
+              onMouseEnter={() => setHoverId(project.id)}
+              onMouseLeave={() => setHoverId(0)}
             />
-          );
-        })}
+          </div>
+        ))}
       </div>
     </div>
   );
