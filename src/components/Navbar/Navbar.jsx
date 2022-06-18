@@ -5,6 +5,7 @@ import styles from "./Navbar.module.scss";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import { CSSTransition } from "react-transition-group";
 import Menu from "../Menu/Menu";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [showButton, setShowButton] = useState(true);
@@ -12,6 +13,11 @@ const Navbar = () => {
   const [dropDownMenu, setDropDownMenu] = useState(false);
   const { width } = useWindowDimensions();
 
+  const navigate = useNavigate();
+
+  const onNavigate = (location) => {
+    navigate(location);
+  };
   const onClick = () => {
     setDropDownMenu(true);
   };
@@ -32,10 +38,10 @@ const Navbar = () => {
         <span className={styles.logo}>Jisu Hong</span>
         {showMenu && (
           <div className={styles.menu}>
-            <ul>HOME</ul>
-            <ul>ABOUT</ul>
-            <ul>PROJECT</ul>
-            <ul>CONTACT</ul>
+            <ul onClick={() => onNavigate("/")}>HOME</ul>
+            <ul onClick={() => onNavigate("/about")}>ABOUT</ul>
+            <ul onClick={() => onNavigate("/project")}>PROJECT</ul>
+            <ul onClick={() => onNavigate("/contact")}>CONTACT</ul>
           </div>
         )}
 

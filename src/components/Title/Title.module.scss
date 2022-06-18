@@ -21,3 +21,10 @@
     font-size: 22px;
   }
 }
+
+@include desktop {
+  .title {
+    margin-top: 30px;
+    font-size: 26px;
+  }
+}

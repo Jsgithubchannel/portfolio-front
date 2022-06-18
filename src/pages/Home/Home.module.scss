@@ -91,3 +91,43 @@
     }
   }
 }
+
+@include desktop {
+  .wrapper {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow-y: hidden;
+    img {
+      width: 60%;
+    }
+  }
+  .paragraph {
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      margin-top: 16px;
+      font-size: 22px;
+    }
+  }
+  .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 50%;
+    // width: 500px;
+    height: 100vh;
+    background-color: $base-color;
+    z-index: -10;
+  }
+
+  .links {
+    justify-content: left;
+    margin-left: 4px;
+
+    * {
+      margin: 0 32px;
+    }
+  }
+}

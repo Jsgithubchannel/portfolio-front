@@ -45,3 +45,22 @@
     font-size: 80px;
   }
 }
+
+@include desktop {
+  .container {
+    margin-bottom: 8px;
+    h1 {
+      font-size: 38px;
+    }
+    ul {
+      font-size: 26px;
+    }
+  }
+  .circle {
+    width: 180px;
+    height: 180px;
+  }
+  .icon {
+    font-size: 92px;
+  }
+}

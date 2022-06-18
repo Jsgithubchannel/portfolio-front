@@ -59,3 +59,18 @@
     }
   }
 }
+
+@include desktop {
+  .wrapper {
+    img {
+      width: 40%;
+    }
+    p {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+  .icon {
+    font-size: 50px;
+  }
+}

@@ -19,6 +19,10 @@
 }
 .menu {
   display: flex;
+
+  * {
+    cursor: pointer;
+  }
 }
 .logo {
   cursor: pointer;
@@ -41,10 +45,4 @@
 .exitActive {
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
-}
-
-@include tablet {
-  .container {
-    background-color: transparent;
-  }
 }
