@@ -1,9 +1,13 @@
 @import "../../styles/utils";
 
 .container {
+  position: relative;
+}
+
+.wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   max-width: 90%;
   height: calc(100vh - 55px);
@@ -17,7 +21,7 @@
 }
 .underline {
   position: absolute;
-  top: 142px;
+  top: 210px;
   width: 280px;
   height: 14px;
   background-color: $highlight-color;
@@ -33,10 +37,12 @@
 }
 
 .links {
+  position: absolute;
+  bottom: 0;
   display: flex;
   justify-content: space-around;
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 4px;
 
   * {
     text-decoration: none;
@@ -46,22 +52,42 @@
 }
 
 @include tablet {
-  .container {
+  .wrapper {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow-y: hidden;
+    max-width: 95%;
     img {
-      width: 80%;
+      width: 60%;
     }
   }
   .paragraph {
     h1 {
-      font-size: 38px;
+      font-size: 30px;
     }
     p {
       margin-top: 16px;
-      font-size: 22px;
+      font-size: 16px;
     }
   }
-  .underline {
-    top: 155px;
-    width: 340px;
+  .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 50%;
+    // width: 500px;
+    height: 100vh;
+    background-color: $base-color;
+    z-index: -10;
+  }
+
+  .links {
+    justify-content: left;
+    margin-left: 4px;
+
+    * {
+      margin: 0 32px;
+    }
   }
 }
