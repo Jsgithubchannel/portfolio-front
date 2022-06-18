@@ -27,3 +27,21 @@
   font-size: 64px;
   color: $secondary-color;
 }
+
+@include tablet {
+  .container {
+    h1 {
+      font-size: 34px;
+    }
+    ul {
+      font-size: 22px;
+    }
+  }
+  .circle {
+    width: 140px;
+    height: 140px;
+  }
+  .icon {
+    font-size: 80px;
+  }
+}

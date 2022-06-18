@@ -44,3 +44,24 @@
     cursor: pointer;
   }
 }
+
+@include tablet {
+  .container {
+    img {
+      width: 80%;
+    }
+  }
+  .paragraph {
+    h1 {
+      font-size: 38px;
+    }
+    p {
+      margin-top: 16px;
+      font-size: 22px;
+    }
+  }
+  .underline {
+    top: 155px;
+    width: 340px;
+  }
+}
