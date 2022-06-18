@@ -7,12 +7,12 @@ const Home = () => {
         <h1>
           Jisu Hong,
           <br />
-          Front-End developer
+          Software developer
         </h1>
         <div className={styles.underline} />
         <p>
           Hello! 👋 My name is Jisu Hong <br />
-          and I’m a front-end developer based in South Korea.
+          and I’m a Software developer based in South Korea.
           <br />I values cooperation and communication.
         </p>
       </div>
