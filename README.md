@@ -8,7 +8,7 @@
 
 ##  기능 / 소개
 - Mobile, Tablet, Desktop에 맞추어 반응형으로 제작했습니다.
-- - Home, About, Project, Contact 섹션으로 나누어져 있습니다.
+- Home, About, Project, Contact 섹션으로 나누어져 있습니다.
 - 프로젝트 정보(Project Detail)는 MySQL과 DRF를 이용하여 동적으로 정보를 나타냈습니다.
 - 장고의 Admin 페이지를 통해 프로젝트의 정보를 입력하여 DB에 저장하였습니다.
 
