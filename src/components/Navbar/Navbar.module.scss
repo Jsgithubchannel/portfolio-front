@@ -2,7 +2,9 @@
 
 .container {
   position: fixed;
-  width: 100vw;
+  // width: 100vw;
+  max-width: 1300px;
+  width: 100%;
   z-index: 1;
   background-color: $base-color;
 }
@@ -45,4 +47,12 @@
 .exitActive {
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
+}
+
+@include desktop {
+  .wrapper {
+    & > * {
+      padding: 0 24px;
+    }
+  }
 }

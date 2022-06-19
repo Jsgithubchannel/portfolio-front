@@ -1,0 +1,14 @@
+@import "./styles/_utils";
+
+.App {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+@include desktop {
+  .App {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+  }
+}
