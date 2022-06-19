@@ -52,6 +52,14 @@
   }
 }
 
+@include small_device {
+  .icons {
+    * {
+      margin: 0 8px;
+    }
+  }
+}
+
 @include tablet {
   .wrapper {
     img {

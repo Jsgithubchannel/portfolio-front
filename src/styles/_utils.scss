@@ -2,9 +2,16 @@ $base-color: #f7c59f;
 $highlight-color: rgba(255, 107, 53, 0.4);
 $secondary-color: #ff6b35;
 
+$small_device: 280px;
 $mobile: 767px;
 $tablet: 1024px;
 $desktop: 1025px;
+
+@mixin small_device {
+  @media (max-width: $small_device) {
+    @content;
+  }
+}
 
 @mixin mobile {
   @media (min-width: $small_device) and (max-width: $mobile) {
