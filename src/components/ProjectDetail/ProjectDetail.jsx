@@ -26,9 +26,7 @@ const ProjectDetail = () => {
     achievementsList = achievements.split("-");
     achievementsList.shift();
   }
-  console.log(qualifications);
   const qualificationsList = qualifications.split("- ");
-  console.log(qualificationsList);
   qualificationsList.shift();
   return (
     <div className={styles.container}>
@@ -46,7 +44,10 @@ const ProjectDetail = () => {
       {qualificationsList.map((qualification, idx) => (
         <ul key={idx}>- {qualification}</ul>
       ))}
-      <img src={`http://localhost:8000${photo}`} alt="project_screenshot" />
+      <img
+        src={`${process.env.REACT_APP_HTTP_PROXY}${photo}`}
+        alt="project_screenshot"
+      />
     </div>
   );
 };

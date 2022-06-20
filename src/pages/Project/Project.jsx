@@ -20,22 +20,24 @@ const Project = () => {
     <div className={styles.container}>
       <Title title={"Project"} />
       <div className={styles.wrapper}>
-        {projects.map((project) => (
-          <div key={project.id} className={styles.imgContainer}>
-            {project.id === hoverId && (
-              <p className={styles.title}>{project.title}</p>
-            )}
-            <img
-              src={`http://localhost:8000${project.photo}`}
-              alt="project_screenshot"
-              onMouseEnter={() => setHoverId(project.id)}
-              onMouseLeave={() => setHoverId(0)}
-              onClick={() =>
-                navigate(`/project/${project.id}`, { state: project })
-              }
-            />
-          </div>
-        ))}
+        {projects.map((project) => {
+          return (
+            <div key={project["id"]} className={styles.imgContainer}>
+              {project["id"] === hoverId && (
+                <p className={styles.title}>{project["title"]}</p>
+              )}
+              <img
+                src={`${process.env.REACT_APP_HTTP_PROXY}${project["photo"]}`}
+                alt="project_screenshot"
+                onMouseEnter={() => setHoverId(project.id)}
+                onMouseLeave={() => setHoverId(0)}
+                onClick={() =>
+                  navigate(`/project/${project["id"]}`, { state: project })
+                }
+              />
+            </div>
+          );
+        })}
       </div>
     </div>
   );
