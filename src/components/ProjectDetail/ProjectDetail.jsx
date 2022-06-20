@@ -26,7 +26,9 @@ const ProjectDetail = () => {
     achievementsList = achievements.split("-");
     achievementsList.shift();
   }
-  const qualificationsList = qualifications.split("-");
+  console.log(qualifications);
+  const qualificationsList = qualifications.split("- ");
+  console.log(qualificationsList);
   qualificationsList.shift();
   return (
     <div className={styles.container}>
