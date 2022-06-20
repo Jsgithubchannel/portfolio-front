@@ -17,6 +17,25 @@
 - Client:https://github.com/Jsgithubchannel/portfolio-front
 - Server:https://github.com/Jsgithubchannel/portfolio-back
 
+## Demo
+
+Backend
+```
+git clone https://github.com/Jsgithubchannel/portfolio-back.git
+cd portfolio-back
+pip install -r requirements.txt
+
+Please, put attached secrets.json, my_settings.py into the portfolio directory.
+```
+Frontend
+```
+git clone https://github.com/Jsgithubchannel/portfolio-front.git
+cd portfolio-front
+npm install
+
+Please, put attached the .env file into the portfolio-front directory.
+```
+
 
 ## Preview
 
