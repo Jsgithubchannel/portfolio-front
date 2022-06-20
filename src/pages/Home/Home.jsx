@@ -15,7 +15,7 @@ const Home = () => {
           <p>
             Hello! 👋 <br /> My name is Jisu Hong <br />
             and I’m a Software developer based in South Korea.
-            <br />I values cooperation and communication.
+            <br />I value cooperation and communication.
           </p>
         </div>
         <img src="assets/real_me.jpeg" alt="my pic" />
