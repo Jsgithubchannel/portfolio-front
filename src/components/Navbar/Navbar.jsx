@@ -35,7 +35,9 @@ const Navbar = () => {
   return (
     <nav className={styles.container}>
       <div className={styles.wrapper}>
-        <span className={styles.logo}>Jisu Hong</span>
+        <span className={styles.logo} onClick={() => onNavigate("/")}>
+          Jisu Hong
+        </span>
         {showMenu && (
           <div className={styles.menu}>
             <ul onClick={() => onNavigate("/")}>HOME</ul>
