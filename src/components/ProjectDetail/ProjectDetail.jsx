@@ -4,8 +4,8 @@ import { useLocation } from "react-router-dom";
 
 const ProjectDetail = () => {
   const { state } = useLocation();
-
   const [
+    // eslint-disable-next-line
     id,
     title,
     start_date,
@@ -13,7 +13,9 @@ const ProjectDetail = () => {
     desc,
     qualifications,
     achievements,
+    // eslint-disable-next-line
     created_at,
+    // eslint-disable-next-line
     updated_at,
     photo,
   ] = Object.values(state);
